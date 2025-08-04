@@ -1,0 +1,48 @@
+Task 1 – Local Network Port Scanning
+This repository contains the results and documentation for Task 1 of the Cybersecurity Internship. The objective of this task was to learn how to discover open ports on devices in a local network using Nmap and understand network exposure.
+
+🛠️ Steps Performed
+1️⃣ Install Nmap
+Downloaded and installed Nmap from the official website.
+
+Verified installation using:
+
+bash
+Copy
+Edit
+nmap --version
+2️⃣ Find Local IP Range
+Used ipconfig to find the local IP and subnet mask.
+
+IP Address: 10.98.152.169
+
+Netmask: 255.255.255.0
+
+Network Range: 10.98.152.0/24
+
+3️⃣ Perform TCP SYN Scan
+Ran the following command:
+
+bash
+Copy
+Edit
+nmap -sS -T4 10.98.152.0/24
+4️⃣ Identify Hosts and Open Ports
+The scan detected 3 live hosts with the following results:
+
+Host IP	Status	Open Ports	MAC Address	Service
+10.98.152.76	Up	None	C6:73:5F:DE:DD:F9	-
+10.98.152.133	Up	53/tcp	42:4F:2F:9D:72:08	DNS
+10.98.152.169	Up	None	(My machine)	-
+
+5️⃣ Research Common Services
+Port 53 (DNS): Used for resolving domain names to IP addresses. Often runs on servers or routers.
+
+6️⃣ Identify Potential Security Risks
+Open DNS port could be vulnerable to:
+
+DNS spoofing or poisoning attacks
+
+DNS amplification for DDoS attacks
+
+No other open TCP services detected on the network hosts.
