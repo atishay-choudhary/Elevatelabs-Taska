@@ -1,0 +1,31 @@
+Analysis report ->
+
+# Phishing Email Analysis Report
+
+## Email Overview:
+A suspicious email claiming to be from Apple Support was analyzed for phishing characteristics.
+
+## Identified Phishing Indicators:
+
+1. **Spoofed Sender Email Address**
+   - Address used: `security-update@apple-secure.com`
+   - This is not a legitimate Apple domain. Apple uses `@apple.com`.
+
+2. **Suspicious Link**
+   - Link shown: `https://apple.id.security-check-now.com`
+   - This mimics Apple’s website but is not associated with Apple.
+
+3. **Urgent/Threatening Language**
+   - Statements like "Failure to verify... will result in permanent suspension" pressure the user.
+
+4. **Generic Salutation**
+   - Uses "Dear Customer" instead of the recipient’s actual name.
+
+5. **Attachment**
+   - Contains an HTML form: `Apple_Verification_Form.html`, likely to phish login credentials.
+
+6. **Grammar and Spelling**
+   - Slight awkward phrasing and formatting typical of phishing emails.
+
+## Conclusion:
+This email contains multiple red flags that indicate a phishing attempt aimed at stealing Apple ID credentials.
